@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Jogo</title>
 </head>
+
 <body>
-  
-<div class="container">
-    <div class="box red"> red</div>
-    <div class="box verde">verde</div>
-    <div class="box azul">azul</div>
-    
-</div> 
-<footer style="background-color: red; width: 100%;">
-    estou arrumando 
-</footer>
+
+    <section>
+        <form class="form1" action="./src/pages/Home/Home.html" method="get">
+            <h1>Login</h1>
+            <fieldset style="background-color:aquamarine;">
+
+                <label for="Email" required><strong>Email</strong></label>
+                <input id="Email" pattern=".*\.com.*" placeholder="enter your email" type="Email">
+
+            </fieldset>
+            <fieldset style="margin-top: 20px; background-color:aquamarine;">
+
+                <label for="password"><strong>Password</strong></label>
+                <input id="password" size="17" placeholder="enter your password" pattern="[0-9a-fA-F]{4,8}"
+                    type="password">
+
+            </fieldset>
+            <button type="submit"><a href="./src/pages/Home/Home.html"><strong>Submit</strong></a></button>
 
 
-</body>    
+        </form>
+
+    </section>
+
+</body>
+
 </html>
-
