@@ -19,7 +19,7 @@ header {
 
 nav {
   align-items: center;
-  background-color: red;
+  background-color: rgb(9, 9, 209);
   width: 100vmax;
   height: 10vh;
   display: flex;
@@ -30,13 +30,25 @@ nav {
   height: 10vh;
   margin-right: 80px;
   align-items: center;
-  background-color: red;
+  background-color: rgb(9, 9, 209);
   display: flex;
   justify-content: space-between;
 }
+section{
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+}
+.container{
+  width: 500px;
+  height: 200px;
+  background-color: yellow;
+}
 .footer {
   align-items: center;
-  background-color: red;
+  background-color: rgb(9, 9, 209);
   width: 100vmax;
   height: 10vh;
   display: flex;
