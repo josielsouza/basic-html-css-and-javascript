@@ -34,6 +34,11 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+} 
 section{
   width: 100vh;
   height: 100vh;

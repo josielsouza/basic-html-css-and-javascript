@@ -49,3 +49,8 @@
     background-color:yellow;
    
 }
+@media (min-width: 360px) {
+    h2 {
+      background-color: green;
+    }
+  } 
