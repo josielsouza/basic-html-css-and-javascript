@@ -1,19 +1,19 @@
-const {inherits} = require('util')
-const {EventEmitter} = require('events')
+//composição de function = uma função que retorna um dado que vai para 
+//outra função que retorna um dado 
 
-function Character(name){
-    this.name = name
-}
+const array = ['Josiel', 'Diego', 'João', 'Dod']
+const funcaoPegaNomeComLetraD = array
+.filter(person => person.startsWith('D'))
+.map(dperson => dperson.toUpperCase())
 
-//na linha 9, o inherits está faendo com que o construtor receba argumentos do EventEmitter que 
-//seria o on, once e emit
-inherits(Character, EventEmitter)
+funcaoPegaNomeComLetraD();
 
-//linha 13 está criando um objeto com a propriedade name que recebe Chapolin como parametro
-const chapolin = new Character('Chapolin');
-
-//linha 16 execulta os evento com o nome  help  que recebeu do EventEmitter e logo em seguida execulta o console log
-chapolin.on("help", () => console.log(`Eu ! o ${chapolin.name} colorado!`  ))
-
-console.log("Oh! E agora, quem poderá me defender?")
-chapolin.emit('help')
+/**
+ * linha 4 cria um array
+ * linha 5 funcaoPegaNomeComLetraD vai receber uma função com o nome array atrelado a ele o .filter, que está que recebe a função person que tbm é uma função, filtrando os nomes que tem a letra D. que vai retornar uma array de dua pessoas. O retorno é armazenado na variável person
+ * 
+ * e na linha 7 o array com duas pessoas vai passar o map e vai retorna no dperson os dois nomes 
+ * transformado com letra maiúscula
+ * 
+ * 
+ */
